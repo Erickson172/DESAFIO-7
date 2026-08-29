@@ -914,17 +914,74 @@ select {
 
 /* Imagem BONUS que aparece ao lado/acima da oferta */
 
-.elementor-element-ed8a755 {
-    display: none !important;
+/* =========================================
+   RESTAURAR QUADRADO COM SINAL DE VERIFICAÇÃO
+========================================= */
+
+.elementor-element-ed8a755,
+.elementor-element-606dc75 {
+    display: flex !important;
+
+    width: 100% !important;
+    max-width: 500px !important;
+
+    margin: 15px auto 10px !important;
+
+    padding: 25px 20px !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+
+    flex-direction: column !important;
+
+    text-align: center !important;
+
+    background: linear-gradient(135deg, #102B70, #071A4A) !important;
+
+    border-radius: 18px !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
 }
 
 
-/* Também remover a imagem BONUS da outra versão */
+/* Centralizar todos os textos dentro do quadrado */
+
+.elementor-element-ed8a755 *,
+.elementor-element-606dc75 * {
+    text-align: center !important;
+}
+
+
+/* Garantir que os textos sejam visíveis */
+
+.elementor-element-ed8a755 p,
+.elementor-element-ed8a755 span,
+.elementor-element-ed8a755 h1,
+.elementor-element-ed8a755 h2,
+.elementor-element-ed8a755 h3,
+.elementor-element-ed8a755 h4,
+
+.elementor-element-606dc75 p,
+.elementor-element-606dc75 span,
+.elementor-element-606dc75 h1,
+.elementor-element-606dc75 h2,
+.elementor-element-606dc75 h3,
+.elementor-element-606dc75 h4 {
+    color: #FFFFFF !important;
+}
+
+
+/* Espaçamento entre o quadrado de verificação e a oferta */
+
+.elementor-element-ed8a755 {
+    margin-bottom: 12px !important;
+}
 
 .elementor-element-606dc75 {
-    display: none !important;
+    margin-bottom: 12px !important;
 }
-
 
 /* Remover possíveis linhas decorativas */
 
