@@ -1161,6 +1161,298 @@ select {
         padding: 22px 15px !important;
     }
 
+	/* =====================================================
+   NOVAS SECÇÕES — BENEFÍCIOS E OBJEÇÕES
+===================================================== */
+
+.invest-section {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 45px 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* TÍTULOS */
+
+.invest-title {
+    margin: 0 auto 40px;
+    max-width: 1100px;
+
+    color: #ffffff;
+
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 800;
+
+    line-height: 1.08;
+    letter-spacing: -1px;
+}
+
+.invest-title .green {
+    color: #21d49a;
+}
+
+
+/* =====================================================
+   CARDS DOS BENEFÍCIOS
+===================================================== */
+
+.benefits-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    width: 100%;
+}
+
+
+/* CARD */
+
+.benefit-card {
+    background: rgba(5, 20, 18, 0.75);
+
+    border: 1px solid rgba(33, 212, 154, 0.22);
+
+    border-radius: 18px;
+
+    padding: 25px 23px;
+
+    text-align: left;
+
+    min-height: 150px;
+
+    transition: 0.25s ease;
+
+    box-sizing: border-box;
+}
+
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(33, 212, 154, 0.55);
+
+    background: rgba(7, 29, 25, 0.9);
+}
+
+
+/* ÍCONES */
+
+.benefit-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 14px;
+
+    background: rgba(33, 212, 154, 0.14);
+
+    color: #21d49a;
+
+    font-size: 24px;
+}
+
+
+/* TÍTULO DOS CARDS */
+
+.benefit-card h3 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    font-weight: 750;
+
+    line-height: 1.3;
+}
+
+
+/* DESCRIÇÃO */
+
+.benefit-card p {
+    margin: 0;
+
+    color: #aeb9b7;
+
+    font-size: 15px;
+
+    line-height: 1.55;
+
+    text-align: left;
+}
+
+
+/* =====================================================
+   SECÇÃO DE OBJEÇÕES
+===================================================== */
+
+.objections-section {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 45px 25px 55px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+
+/* ETIQUETA */
+
+.objection-tag {
+    display: inline-block;
+
+    padding: 8px 20px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid rgba(33, 212, 154, 0.55);
+
+    border-radius: 50px;
+
+    color: #49e3ae;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* TÍTULO */
+
+.objections-title {
+    max-width: 750px;
+
+    margin: 0 auto 35px;
+
+    color: #ffffff;
+
+    font-size: clamp(32px, 4vw, 50px);
+
+    font-weight: 800;
+
+    line-height: 1.08;
+}
+
+
+.objections-title .green {
+    color: #21d49a;
+}
+
+
+/* LISTA */
+
+.objections-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* CARD DAS OBJEÇÕES */
+
+.objection-card {
+    width: 100%;
+
+    padding: 22px 24px;
+
+    box-sizing: border-box;
+
+    text-align: left;
+
+    border: 1px solid rgba(33, 212, 154, 0.22);
+
+    border-radius: 18px;
+
+    background: rgba(5, 20, 18, 0.7);
+}
+
+
+.objection-card h3 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    line-height: 1.4;
+}
+
+
+.objection-card p {
+    margin: 0;
+
+    color: #aeb9b7;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+
+    text-align: left;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .invest-section,
+    .objections-section {
+        padding: 35px 16px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .benefit-card {
+        min-height: auto;
+        padding: 22px 20px;
+    }
+
+    .invest-title,
+    .objections-title {
+        margin-bottom: 28px;
+    }
+
+    .objection-card {
+        padding: 20px 18px;
+    }
+
+}
 }
 
 </style>
@@ -1637,6 +1929,222 @@ tu vais aprender:</h2>				</div>
 					</div>
 	</div>
 </div>
+
+				<!-- =====================================================
+     SECÇÃO: TUDO O QUE PRECISAS PARA INVESTIR
+===================================================== -->
+
+<section class="invest-section">
+
+    <h2 class="invest-title">
+        Tudo o que precisas para investir com
+        <span class="green">clareza<br>e segurança</span>
+    </h2>
+
+
+    <div class="benefits-grid">
+
+
+        <!-- CARD 1 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">▤</div>
+
+            <h3>Começa com pouco</h3>
+
+            <p>
+                Aprende a dar o primeiro passo mesmo com um
+                orçamento apertado, em Kwanzas.
+            </p>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">⌁</div>
+
+            <h3>Mercado angolano na prática</h3>
+
+            <p>
+                Bolsa, títulos do tesouro, dólar, imóveis e activos
+                digitais explicados sem jargão.
+            </p>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">◎</div>
+
+            <h3>Plano dia-a-dia</h3>
+
+            <p>
+                7 aulas objectivas, 30 minutos por dia,
+                com tarefa prática no fim de cada uma.
+            </p>
+
+        </div>
+
+
+        <!-- CARD 4 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">♢</div>
+
+            <h3>Menos risco, mais controlo</h3>
+
+            <p>
+                Como evitar burlas, esquemas e os erros que
+                custam caro a quem começa.
+            </p>
+
+        </div>
+
+
+        <!-- CARD 5 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">▣</div>
+
+            <h3>Materiais prontos</h3>
+
+            <p>
+                Checklists, planilha de controlo financeiro e guias
+                para aplicares no mesmo dia.
+            </p>
+
+        </div>
+
+
+        <!-- CARD 6 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">♧</div>
+
+            <h3>Comunidade VIP</h3>
+
+            <p>
+                Grupo de WhatsApp com outros investidores
+                angolanos a partilhar oportunidades.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+					<!-- =====================================================
+     SECÇÃO: OBJEÇÕES
+===================================================== -->
+
+<section class="objections-section">
+
+
+    <div class="objection-tag">
+        SEM DESCULPAS
+    </div>
+
+
+    <h2 class="objections-title">
+
+        O que costuma travar quem
+        <br>
+
+        quer
+        <span class="green">
+            começar a investir
+        </span>
+
+    </h2>
+
+
+    <div class="objections-list">
+
+
+        <!-- OBJEÇÃO 1 -->
+
+        <div class="objection-card">
+
+            <h3>
+                “Não tenho dinheiro suficiente para investir.”
+            </h3>
+
+            <p>
+                É exactamente por isso que o método existe.
+                Mostramos como começar com valores pequenos e crescer
+                com consistência, em vez de esperar por um dinheiro
+                que nunca chega.
+            </p>
+
+        </div>
+
+
+        <!-- OBJEÇÃO 2 -->
+
+        <div class="objection-card">
+
+            <h3>
+                “Não percebo nada de investimentos.”
+            </h3>
+
+            <p>
+                Nenhuma experiência é necessária. As aulas usam
+                linguagem simples e exemplos do dia-a-dia angolano —
+                se sabes usar o telemóvel, consegues seguir.
+            </p>
+
+        </div>
+
+
+        <!-- OBJEÇÃO 3 -->
+
+        <div class="objection-card">
+
+            <h3>
+                “Não tenho tempo.”
+            </h3>
+
+            <p>
+                São 30 minutos por dia durante 7 dias.
+                E como o acesso é vitalício, avanças ao teu ritmo,
+                quando e onde quiseres.
+            </p>
+
+        </div>
+
+
+        <!-- OBJEÇÃO 4 -->
+
+        <div class="objection-card">
+
+            <h3>
+                “E se não for para mim?”
+            </h3>
+
+            <p>
+                Tens 7 dias de garantia incondicional.
+                Se não fizer sentido, devolvemos 100% do valor —
+                sem perguntas e sem burocracia.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
 				</div>
 				</div>
 				</div>
