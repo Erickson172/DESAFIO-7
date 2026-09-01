@@ -1452,6 +1452,180 @@ select {
         padding: 20px 18px;
     }
 
+	/* =====================================================
+   SECÇÃO — É PARA TI / NÃO É PARA TI
+===================================================== */
+
+.for-you-section {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 40px 20px 50px;
+
+    box-sizing: border-box;
+}
+
+
+.for-you-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =====================================================
+   CAIXA GERAL
+===================================================== */
+
+.for-you-card {
+    padding: 26px 24px;
+
+    border-radius: 18px;
+
+    box-sizing: border-box;
+
+    text-align: left;
+
+    background: rgba(5, 20, 18, 0.75);
+}
+
+
+/* =====================================================
+   CAIXA VERDE
+===================================================== */
+
+.for-you-card.yes {
+    border: 1px solid rgba(33, 212, 154, 0.55);
+}
+
+
+/* =====================================================
+   CAIXA VERMELHA
+===================================================== */
+
+.for-you-card.no {
+    border: 1px solid rgba(255, 82, 82, 0.55);
+
+    background: rgba(28, 14, 14, 0.75);
+}
+
+
+/* =====================================================
+   TÍTULOS
+===================================================== */
+
+.for-you-card h3 {
+    margin: 0 0 20px;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.for-you-card.yes h3 {
+    color: #45E0AA;
+}
+
+
+.for-you-card.no h3 {
+    color: #FF6464;
+}
+
+
+/* =====================================================
+   LISTAS
+===================================================== */
+
+.for-you-card ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+
+.for-you-card li {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 13px;
+
+    color: #AEB9B7;
+
+    font-size: 15px;
+
+    line-height: 1.45;
+}
+
+
+/* ÍCONE VERDE */
+
+.for-you-card.yes li::before {
+    content: "✓";
+
+    color: #21D49A;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    line-height: 1.2;
+}
+
+
+/* ÍCONE VERMELHO */
+
+.for-you-card.no li::before {
+    content: "×";
+
+    color: #FF5656;
+
+    font-size: 22px;
+
+    font-weight: 400;
+
+    line-height: 0.9;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .for-you-section {
+        padding: 30px 16px;
+    }
+
+    .for-you-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .for-you-card {
+        padding: 23px 20px;
+    }
+
+}
 }
 }
 
@@ -2251,6 +2425,85 @@ limitado!</h2>				</div>
 				</div>
 					</div>
 				</div>
+<!-- =====================================================
+     SECÇÃO — É PARA TI / NÃO É PARA TI
+===================================================== -->
+
+<section class="for-you-section">
+
+    <div class="for-you-grid">
+
+
+        <!-- =========================
+             É PARA TI
+        ========================== -->
+
+        <div class="for-you-card yes">
+
+            <h3>
+                ✓ É para ti se...
+            </h3>
+
+            <ul>
+
+                <li>
+                    Queres começar a investir mas não sabes por onde começar
+                </li>
+
+                <li>
+                    Tens pouco dinheiro e queres fazê-lo render
+                </li>
+
+                <li>
+                    Queres parar de depender só do salário
+                </li>
+
+                <li>
+                    Procuras um método simples, prático e angolano
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =========================
+             NÃO É PARA TI
+        ========================== -->
+
+        <div class="for-you-card no">
+
+            <h3>
+                × Não é para ti se...
+            </h3>
+
+            <ul>
+
+                <li>
+                    Procuras esquemas de enriquecer rápido
+                </li>
+
+                <li>
+                    Não queres dedicar 30 min/dia durante 7 dias
+                </li>
+
+                <li>
+                    Queres promessas mágicas em vez de método
+                </li>
+
+                <li>
+                    Não acreditas que pequenos passos geram grandes resultados
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+</section>
+	
 		<div class="elementor-element elementor-element-0105b6b elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con e-parent" data-id="0105b6b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-67da71f elementor-absolute elementor-widget elementor-widget-image" data-id="67da71f" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
